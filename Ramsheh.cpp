@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <conio.h>
 using namespace std;
 
 
@@ -10,24 +11,24 @@ int main () {
 	float vfloat[];
 
 
-  std::ifstream myfile;
-  myfile.open ("myfile.txt", ios::in);
+	std::ifstream myfile;
+	myfile.open ("myfile.txt", ios::in);
 
-  if (!myfile)
-	  exit(0);
+	if (!myfile)
+		exit(0);
   
-  myfile.get(vfloat);
-  while(!myfile.oef())
-  {
-	  float calculate_median;
-	  float median_value;
-	  calculate_median = median_calculator(vfloat, median_value);
-  }
+	myfile.get(vfloat);
+	while(!myfile.oef())
+	{
+		float calculate_median;
+		float median_value;
+		calculate_median = median_calculator(vfloat, median_value);
+	}
 
 
-  myfile.close();
+	myfile.close();
 
-  return 0;
+	return 0;
 }
 
 
